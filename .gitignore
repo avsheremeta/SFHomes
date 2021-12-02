@@ -18,6 +18,9 @@ deploy-options.json
 #vscode
 .vscode
 
+#.husky
+.husky
+
 # LWC Jest coverage reports
 coverage/
 
