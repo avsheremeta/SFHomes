@@ -1,0 +1,29 @@
+<apex:page controller="CreateContactController" tabStyle="Contact">
+    <apex:form >
+        <apex:pageMessages />
+        <apex:pageBlock title="Create New Contact">  
+            
+            <apex:pageBlockSection title="Contact Information" columns="2" >
+            	<apex:inputField value="{! con.FirstName }" />
+                <apex:inputField value="{! con.LastName }" />
+                <apex:inputField value="{! con.AccountId }" />
+                <apex:inputField value="{! con.Phone }" />
+				<apex:inputField value="{! con.Email }" required="true" />            	
+				<apex:inputField value="{! con.Password__c }" required="true" />                    
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Address Information" columns="2"> 
+                <apex:inputField value="{! con.MailingStreet }" />
+                <apex:inputField value="{! con.Description }" />
+                <apex:inputField value="{! con.MailingCity }" />
+            	<apex:inputField value="{! con.MailingCountry }" />
+            </apex:pageBlockSection>
+       
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Save"/>
+                <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"/>               
+            </apex:pageBlockButtons>  
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

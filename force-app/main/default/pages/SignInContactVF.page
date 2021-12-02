@@ -1,0 +1,20 @@
+<apex:page controller="SignInContactController" tabStyle="Contact">           
+    <apex:form >
+        <apex:pageMessages ></apex:pageMessages> 
+        
+        <apex:pageBlock >
+            
+            <apex:pageBlockSection title="Enter Contact Email and Password" columns="1">              
+                <apex:inputText value="{!contactEmail}" label="Email"/>                 
+                <apex:inputSecret value="{!contactPassword}" label="Password"/>   
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!doEnter}" value="Enter"/>
+                <apex:commandButton action="{!addContact}" value="Add Contact"/>
+                <apex:commandButton action="{!restorePaswword}" value="Forgot Password?"/>
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>        
+    </apex:form>
+</apex:page>
