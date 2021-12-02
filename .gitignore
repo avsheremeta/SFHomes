@@ -12,6 +12,12 @@ deploy-options.json
 **/lwc/jsconfig.json
 **/lwc/.eslintrc.json
 
+# aura
+**aura
+
+#vscode
+.vscode
+
 # LWC Jest coverage reports
 coverage/
 
