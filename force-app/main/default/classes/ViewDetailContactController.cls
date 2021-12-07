@@ -45,7 +45,7 @@ public class ViewDetailContactController
    //get list of paticular Contact's homes according to the selected filter
    public void getHouses() {     
         string query = 'select id, Contact__c, Name, Type__c, Status__c, Rooms__c, Price__c from House__c ' +
-            			'WHERE (Contact__c = :contactId OR Contact__c = null) ';  
+            			'WHERE (Contact__c = :contactId OR Contact__c = null)';  
        
         allHouses = new List<WrapperHouses>();
        
